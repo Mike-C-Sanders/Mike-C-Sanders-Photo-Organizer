@@ -5,10 +5,8 @@ originals = os.listdir()
 
 print(originals)#printing to test my code. 
 
-#My First atempt using the find method
+#My Second atempt using the find method
 def extract_place(filename):
-    first = filename.find("_")
-    partial = filename[first+1:]
-    second = partial.find("_")
-    full = partial[:second]
-    return full
+    parts = filename.split("_") # Get a list containing all the parts
+    place_name = parts[1] # Use the index operator to select the second list item
+    return place_name"""
